@@ -40,11 +40,10 @@ def main():
                     # Add more video URLs as needed
                 ]
 
-                # Display the videos
+                # Display the videos without showing URLs
                 for video_url in video_urls:
                     video_id = extract_video_id(video_url)
                     if video_id:
-                        st.subheader(f"Video URL: {video_url}")
                         video_embed = embed_youtube_video(video_id)
                         try:
                             st.markdown(video_embed, unsafe_allow_html=True)
