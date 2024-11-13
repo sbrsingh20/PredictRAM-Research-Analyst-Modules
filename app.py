@@ -36,7 +36,11 @@ def main():
                 for video_id in video_ids:
                     st.subheader(f"Video ID: {video_id}")
                     video_embed = embed_youtube_video(video_id)
-                    st.markdown(video_embed, unsafe_allow_html=True)
+                    
+                    try:
+                        st.markdown(video_embed, unsafe_allow_html=True)
+                    except Exception as e:
+                        st.error(f"An error occurred while loading the video: {e}")
 
             else:
                 st.error("The Excel file must contain a 'video_id' column.")
