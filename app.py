@@ -8,7 +8,7 @@ def load_user_list(file_path):
 
 # Function to embed a YouTube video
 def embed_youtube_video(video_id):
-    return f'<iframe width="560" height="315" src="https://www.youtube.com/watch?v=80_EV6L8V9s&list=PLOY7S4JN27ZX_k0tRXJ6MfDUQfoSINC51&index=2" frameborder="0" allowfullscreen></iframe>'
+    return f'<iframe width="560" height="315" src="https://www.youtube.com/watch?v=T8msaNr2hrM&list=PLOY7S4JN27ZX_k0tRXJ6MfDUQfoSINC51" frameborder="0" allowfullscreen></iframe>'
 
 # Main function to run the Streamlit app
 def main():
